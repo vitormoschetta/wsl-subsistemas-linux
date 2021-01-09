@@ -24,7 +24,6 @@ Basta abrir o Microsoft Store (Loja) pelo menu iniciar e procurar por Ubuntu e b
 No menu do Windows um ícono do Ubuntu ficará disponível, clique nele e informe os dados pedidos (usuario e senha do sistema).
 <br>
 
-
 ## Instalar .NET
 ```
 sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -36,6 +35,15 @@ sudo apt-get update
 sudo apt-get install dotnet-sdk-3.1
 ```
 <br>
+
+
+## Desinstalar ubuntu
+Pelo powershel executar
+```
+wsl --unregister Ubuntu
+```
+<br>
+
 
 Fontes:
 <https://balta.io/artigos/wsl>
