@@ -5,16 +5,16 @@
 
 
 ### Instalar Distribuição Linux
-A distribuição Linux pode ser baixada pela Microsoft Store.
+A distribuição Linux pode ser baixada pela Microsoft Store.  
 Basta abrir o Microsoft Store (Loja) pelo menu iniciar e procurar por Ubuntu e baixar.
 
 
 ### Executar o Ubuntu
-No menu do Windows um ícono do Ubuntu ficará disponível, clique nele e informe os dados pedidos (usuario e senha do sistema).
+No menu do Windows um ícono do Ubuntu ficará disponível, clique nele e informe os dados pedidos (usuario e senha do sistema).  
 
 
 ### Instalar Windows Terminal (no Windows)
-Também pode ser baixado pela Microsoft Store. 
+Também pode ser baixado pela Microsoft Store.   
 Esse terminal pode ser utilizado tanto para o PowerShel, cmd (windows) quanto para bash (linux).
 
 
@@ -39,12 +39,12 @@ Obs: O Git já vem instalado por padrão nas distribuições Ubuntu.
 
 
 ### Instalar VSCODE (no Windows)
-<https://docs.microsoft.com/pt-br/windows/wsl/tutorials/wsl-vscode>
+<https://docs.microsoft.com/pt-br/windows/wsl/tutorials/wsl-vscode>  
 Neste caso acessaremos o WSL (Ubuntu).
 
 
 ### Instalar Docker (no WSL Ubuntu)
-<https://medium.com/codigorefinado/docker-no-linux-dentro-do-windows-10-com-wsl-2-f52b91931267>
+<https://medium.com/codigorefinado/docker-no-linux-dentro-do-windows-10-com-wsl-2-f52b91931267>  
 Acessaremos os container remotamente pelo VSCODE.
 
 
