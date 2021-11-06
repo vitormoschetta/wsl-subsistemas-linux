@@ -48,7 +48,12 @@ Neste caso acessaremos o WSL (Ubuntu).
 Acessaremos os container remotamente pelo VSCODE.
 
 
-
+### Habilitar acesso Docker com usuário não root (no WSL Ubuntu)
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker 
+```
 
 
 
