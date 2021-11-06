@@ -56,5 +56,14 @@ newgrp docker
 ```
 
 
+### Instalar Portainer como interface grafica para Containeres ((no WSL Ubuntu)
+```
+docker run -d -p 9000:9000 --name portainer --restart always --network=host -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+```
+
+Obs: O Windows mapeia automaticamente a porta 9000 do localhost do WSL Ubunto para a mesma porta do localhost do  Windows. Logo no Windows é possível acessar no browser:
+
+<http://localhost:9000/>
+
 
 
