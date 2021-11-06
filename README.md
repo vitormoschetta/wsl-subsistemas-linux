@@ -67,3 +67,31 @@ Obs: O Windows mapeia automaticamente a porta 9000 do localhost do WSL Ubunto pa
 
 
 
+### WSL não conecta na VPN privada 
+Para se conectar a VPN de uma corporação instalamos um aplicativo VPN client no Windows e nos conectamos com credenciais da empresa.  
+
+Se o nosso código fonte ou qualquer outro arquivo de nossos projetos dependam de um servidor que só é acessível na VPN corporativa, teremos um problema: o WSL não conseguirá se conectar nessa rede. Segue solução:
+
+No terminal do WSL (distro Linux):
+```
+pconfig.exe /all
+```
+Após o comando acima, identifique o DNS da VPN.
+
+Abra o seguinte arquivo:
+```
+sudo vi /etc/resolv.conf
+```
+
+Adicione o endereço DNS encontrado anteriormente ao **nameserver**:
+```
+nameserver 192.168.0.1 (algo do tipo)
+```
+
+Execute:
+```
+sudo ln -s ../run/resolvconf/resolv.conf resolv.conf
+```
+
+<https://docs.microsoft.com/pt-br/windows/wsl/troubleshooting>  
+<https://askubuntu.com/questions/134121/how-to-restore-recreate-etc-resolv-conf-files>
